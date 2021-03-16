@@ -1,0 +1,95 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right, #9cf, #ccf);
+}
+.accountoptions{
+  width:100%;
+  height:500px;
+  font-family: 'Montserrat', sans-serif;
+}
+#userinfopassword{
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.userinfo{
+  margin-left: auto;
+  margin-right: auto;
+  width: inherit;
+  height: 500px;
+  font-family: 'Montserrat', sans-serif;
+}
+.userinfolabel{
+  background-image: radial-gradient(#aaf, #9ef, #bbf);
+  float:left;
+  width: inherit;
+  height: 40px;
+  color: #557;
+  border-style: solid;
+  border-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.userinforeturn{
+  float:left;
+  height: 40px;
+  color: #557;
+  border-style: solid;
+  border-color: #ccf;
+  background-image: linear-gradient(to left, #9cf, #ccf);
+  font-family: 'Montserrat', sans-serif;
+}
+.action{
+  position: relative;
+  width:inherit;
+  height: inherit;
+  background-color: #baf;
+  border-style: solid;
+  border-color: #ddf;
+  cursor: pointer;
+  color: #435;
+  font-family: 'Montserrat', sans-serif;
+}
+#changes{
+  background-image: linear-gradient(to right, #b9d, #9cf);
+  font-size: 30px;
+}
+#cancel{
+  background-image: linear-gradient(to right, #9cf, #f9b);
+  font-size: 30px;
+  margin-top: 20;
+  font-family: 'Montserrat', sans-serif;
+}
+input{
+  background-color: #559;
+  color: #ccf;
+  width: inherit;
+  border-color: #9cf;
+  border-style: solid;
+  height: inherit;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+#userchanger{
+  width:50%;
+  height:90%;
+  margin:auto;
+  background-image: linear-gradient(to right, #77f, #bdf);
+  border-style: solid;
+  border-color: #bcf;
+  font-family: 'Montserrat', sans-serif;
+}
+.featuresbutton{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.error{
+  position: relative;
+  width: inherit;
+  height: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #fcc;
+  background-color: #f55;
+}
+input[type=submit]{
+  cursor: pointer;
+}

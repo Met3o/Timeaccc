@@ -1,0 +1,527 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #349;
+}
+div{
+  width: 100%;
+}
+
+.Day{
+  position: relative;
+  display: block;
+  background-color: #09f;
+  padding-top: 6px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2.2px;
+  border-color: #9cf;
+  box-shadow: 0px 0px 30px #09d;
+  font-family: 'Montserrat', sans-serif;
+}
+.PrevDay{
+  position: relative;
+  display: block;
+  background-color: #048;
+  padding-top: 6px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-self: center;
+  color: #0aa;
+  font-size: 30px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2.2px;
+  border-color: #59b;
+  box-shadow: 0px 0px 30px #05b;
+  font-family: 'Montserrat', sans-serif;
+}
+.days{
+}
+
+.Calendar{
+  position: relative;
+  bottom: 0;
+  left:30;
+  width: 420;
+}
+.header{
+  height: 30px;
+  width:inherit;
+  color: #9cf;
+  mix-blend-mode: luminosity;
+  font-size: 20px;
+}
+.CalendarContainer{
+  display:block;
+  position: relative;
+
+  justify-content: center;
+
+  margin-bottom:30px;
+  margin: auto;
+  background-color: #058;
+  align-self: center;
+  width: 500px;
+  height: 0;
+  border-width: thick;
+  border-color: #fff;
+  box-shadow: 0px 0px 30px #09f;
+}
+.monthName{
+  height: 33px;
+  width: inherit;
+  background-color: #8cf;
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 2px 2px 8px #69c;
+}
+.monthsHolder{
+  /* display:flex;
+  flex-wrap: wrap; */
+  width: 500px;
+  height: 600px;
+  background-image: linear-gradient(to top, #6ab, #bdf, #bdf, #47b);
+}
+.monthsHolderTable{
+  display: table;
+}
+.displayer{
+  width: 500px;
+  height: 500px;
+  background-color: #f00;
+}
+
+.calendarholder{
+  background-image: linear-gradient(to bottom, #09d, #9cf);
+  position: relative;
+  right:30;
+  width:500px;
+  float:left;
+
+}
+.calendarholderholder::-webkit-scrollbar {
+    display: block;
+    width: 50px;
+    background-image: linear-gradient(to right, #9bf, #9cf, #9bf);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #9ff;
+}
+.calendarholderholder::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.calendarholderholder::-webkit-scrollbar-thumb {
+    border-right: none;
+    border-left: none;
+    height: 100px;
+    background-image: radial-gradient(#aef, #79f, #09f);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #9cf;
+}
+
+.calendarholderholder::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: inherit;
+}
+
+.calendarholderholder::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 0;
+}
+
+.calendarholderholder{
+  height: 450px;
+  width: 470px;
+  overflow-x: scroll;
+  background-image: linear-gradient(to bottom, #058, #09d);
+  border-style: solid;
+  border-color: #adf;
+  border-width: 30px;
+  margin-left: auto;
+  position: absolute;
+  bottom:0;
+  top:-30;
+  left:0;
+  right:50%;
+}
+/*schedules*/
+
+.scheduleheader{
+  justify-content: space-around;
+  width: inherit;
+  height: 40px;
+  background-image: linear-gradient(to right, #9cf, #0cf);
+  border-color: #def;
+  border-style: solid;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px 8px #69c;
+}
+.scheduletitle{
+  justify-content: space-around;
+  width: inherit;
+  height: 40px;
+  background-image: linear-gradient(to right, #0cf, #9cf);
+  border-style: solid;
+  border-color: #def;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 8px #69c;
+}
+
+.scheduleContainer {
+  display: block;
+  position: relative;
+  width:470px;
+  height: 250px;
+  background-color: #048;
+  color: #fff;
+  border-color: #9cf;
+  border-width: thick;
+  border-style: solid;
+}
+
+.description{
+  position: relative;
+  height: 140px;
+  width:inherit;
+  border-color: #fff;
+  background-color: #09f;
+}
+
+.holder{
+  background-image: linear-gradient(to bottom, #09d, #9cf);
+  position: relative;
+  width:99%;
+  float:auto;
+  border-style: solid;
+  border-color: #aef;
+
+}
+.holderholder::-webkit-scrollbar {
+    display: block;
+    width: 50px;
+
+
+}
+.holderholder::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.holderholder::-webkit-scrollbar-thumb {
+  border-right: none;
+  border-left: none;
+  height: 100px;
+  background-image: radial-gradient(#09f, #09f, #9cf);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #9cf;
+}
+
+.holderholder::-webkit-scrollbar-track-piece:end {
+    background-color: #9cf;
+    margin-bottom: inherit;
+}
+
+.holderholder::-webkit-scrollbar-track-piece:start {
+    background-color: #09f;
+    margin-top: 0;
+}
+
+.holderholder{
+  scroll-behavior: auto;
+  height: 450px;
+  width: 532px;
+  overflow-x: scroll;
+  background-image: linear-gradient(to top, #678,  #46a, #678);
+  border-style: solid;
+  border-color: #adf;
+  border-width: 30px;
+  float: right;
+  position: relative;
+  bottom: 30;
+}
+#wholder{
+  margin: auto;
+  position: relative;
+  right:calc((100% - 1200px)/2);
+}
+#newevent{
+  position: relative;
+  left:50;
+  top:8;
+  width:400px;
+  background-color: #0af;
+  padding-bottom: 5px;
+  height: 30px;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 2.2px;
+  border-color: #9cf;
+  box-shadow: 0px 0px 30px #0af;
+}
+#deleteall{
+  position: relative;
+  left:50;
+  top:8;
+  width:400px;
+  background-color: #f55;
+  height: 30px;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 2.2px;
+  border-color: #f9c;
+  box-shadow: 0px 0px 30px #f55;
+}
+#schedulesDescription{
+  height:100px;
+  width:500px;
+  text-align:left;
+}
+
+.schedulesdiv{
+  background-image: linear-gradient(to bottom, #55a, #86a);
+  height:30px;
+  width:inherit;
+  border-style: solid;
+  border-color: #77e;
+}
+#creatorholder{
+  margin-left:auto;
+  margin-right: auto;
+  width:600px;
+  height:400px;
+  background-color: #559;
+}
+#descriptionholder{
+  height:150px;
+}
+#creatingmenu{
+  position:relative;
+  bottom:300;
+  float: left; height:400px; width:inherit; align-items:center;
+}
+.submitinput{
+  width:inherit;
+  height:inherit;
+  background-image: linear-gradient(to right, #ccf, #adf);
+  border-color: #faf;
+  border-style: solid;
+  color: #325;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+option{
+  width:inherit;
+  height:inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #347;
+  background-image: linear-gradient(to right, #ccf, #adf);
+}
+textarea{
+  width:inherit;
+  height:inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #347;
+  background-image: linear-gradient(to right, #ccf, #adf);
+}
+.scheduleselect{
+  width:inherit;
+  height:inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #347;
+  background-image: linear-gradient(to right, #ccf, #adf);
+  border-radius:5px;
+  border-style: solid;
+  border-color:#68a;
+}
+input[type=submit]{
+  cursor: pointer;
+}
+#creatorholderholder{
+  position: relative;
+  right: 20%;
+}
+#editholder{
+  position:relative;
+  float:left;
+  width:600px;
+  height:400px;
+  background-color: #559;
+}
+#editshow{
+  position: relative;
+  float:right;
+  left:50%;
+  bottom:65%;
+}
+.schedulestiming{
+  color: #afe;
+  text-shadow:0px 0px 5px #9cf;
+}
+.finddiv{
+  display: none;
+}
+
+#remindersholderholder{
+  overflow-y: scroll;
+  overflow-x:hidden;
+  width:450px;
+  position: sticky;
+  left:60%;
+  top:0;
+  height: 35;
+  background-color: #048;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #8ad;
+  border-width: thick;
+  margin: auto;
+}
+
+#remindersindicateholder{
+  width:460px;
+  align-items: center;
+  position: sticky;
+  left:69%;
+  height: 35;
+  background-color: #048;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #9ce;
+  border-width: thick;
+}
+#remindersholder{
+  height:auto;
+  background-image: linear-gradient(to bottom, #89f, #9cf);
+  position: relative;
+  width:98.6%;
+  float:auto;
+  border-style: solid;
+  border-color: #aef;
+}
+#remindersholderholder::-webkit-scrollbar {
+    display: block;
+    width: 50px;
+}
+#remindersholderholder::-webkit-scrollbar-track {
+    background-color: #09f;
+}
+
+#remindersholderholder::-webkit-scrollbar-thumb {
+  border-right: none;
+  border-left: none;
+  height: 100px;
+  background-image: radial-gradient(#09f, #09f, #9cf);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #9cf;
+}
+
+#remindersholderholder::-webkit-scrollbar-track-piece:end {
+    background-color: #9cf;
+    margin-bottom: inherit;
+}
+
+#remindersholderholder::-webkit-scrollbar-track-piece:start {
+    background-color: #09f;
+    margin-top: 0;
+}
+.schedulesindicate{
+  width:100%;
+  height:40px;
+  text-align: left;
+  background-image: linear-gradient(to right, #048, #458);
+  position: sticky;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  color: #9cf;
+  #text-shadow: 2px 2px 8px #69c;
+  font-size: 14px;
+  border-style: solid;
+  border-color: #9cf;
+}
+
+.schedulesindicatetime{
+  width:100%;
+  height:40px;
+  text-align: center;
+  background-image: linear-gradient(to right, #048, #458);
+  position: sticky;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  color: #9cf;
+  #text-shadow: 2px 2px 8px #69c;
+  font-size: 25px;
+  border-style: solid;
+  border-color: #9cf;
+}
+
+
+.schedulesreturn{
+  width:100%;
+  height:40px;
+  text-align: center;
+  background-image: linear-gradient(to right, #aef, #9af);
+  position: sticky;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  color: #447;
+  text-shadow: 2px 2px 4px #ccc;
+  font-size: 25px;
+  border-style: solid;
+  border-color: #9cf;
+}
+#showhide{
+  width:60px;
+  height:40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  background-image: linear-gradient(to right, #aef, #9cf);
+  border-style: solid;
+  border-color: inherit;
+  color: #448;
+  border-radius: 10px;
+}
+#remindercontroller{
+  position: absolute;
+  bottom:85%;
+  z-index: 4;
+}
+#instructions{
+  width:100%;
+  height:5%;
+  background-color: #09f;
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 90%;
+  z-index: 2;
+  font-size:30px;
+  border-color: #aef;
+  border-radius: thick;
+  border-style: solid;
+}

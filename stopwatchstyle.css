@@ -1,0 +1,216 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #346;
+}
+button{
+  font-family: 'Montserrat', sans-serif;
+}
+#StopwatchContainer{
+  width:1200px;
+  height:350px;
+  background-color: #09f;
+  align-items: center;
+  position: relative;
+  left:0;
+  right:0;
+  top:75;
+  margin:auto;
+  font-size: 40px;
+  color: #99f;
+}
+#buttoncontainer{
+  position: relative;
+  width: auto;
+  height: 50px;
+  background-color: #8cf;
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 2px 2px 8px #69c;
+  box-shadow: 0px 0px 30px #09d;
+}
+.controllerButtons{
+  cursor: pointer;
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2.2px;
+  border-color: #9cf;
+  box-shadow: 0px 0px 30px #0af;
+}
+#control{
+  color: #1ae;
+  margin-left: 25%;
+}
+#reset{
+  color: #ac2;
+  margin-left: 42%;
+}
+#stop{
+  color: #f00;
+  margin-left: 59%;
+}
+.timingcontainers{
+  font-family: 'JetBrains Mono', monospace;
+  width: auto;
+  height: 120px;
+  border-color: #9cf;
+  background-color: #058;
+  position: relative;
+  top:0;
+  bottom:0;
+  right:0;
+  text-align: justify;
+  padding-bottom: 50px;
+  align-self: center;
+  color: #ddf;
+  font-size: 60px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 2.2px;
+  border-color: #9cf;
+  box-shadow: 0px 0px 30px #09d;
+  text-align: left;
+}
+
+.setTimer{
+  width: 1200px;
+  height: 50px;
+  background-color: #18d;
+  position: relative;
+  left: -2;
+}
+
+.timercontrol{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  border-style: solid;
+  border-width: medium;
+  border-color: #fff;
+  font-size: 27px;
+  box-shadow: 0px 0px 30px #aaf;
+  color: #247;
+  z-index: 2;
+  text-align: center;
+  margin-right: -3;
+  margin-left: 10;
+  cursor:pointer;
+}
+
+#centisecondsUnit{bottom:29;
+  background-color: #fff;
+  border-color: #89f;
+  left: 125;
+}
+#centisecondsTen{bottom:33;
+    background-color: #fff;
+    border-color: #89f;
+    left: 163;
+    font-size: 17px;
+}
+#secondsUnit{bottom: 29;
+  background-color: #bdf;
+  border-color: #9bf;
+  left: 152;
+}
+#secondsTen{
+  background-color: #bdf;
+  border-color: #9bf;
+  left: 190;
+  bottom:33;
+  font-size: 17px;
+}
+#minutessUnit{bottom:29;
+  background-color: #9bf;
+  border-color: #bdf;
+  left: 176;
+}
+#minutesTen{
+  background-color: #9bf;
+  border-color: #bdf;
+  left: 214;
+  bottom:33;
+  font-size: 17px;
+}
+#hoursUnit{bottom:29;
+  background-color: #89f;
+  border-color: #fff;
+  left: 203;
+}
+#hoursTen{
+ background-color: #89f;
+ border-color: #fff;
+ left: 242;
+ bottom:33;
+ font-size: 17px;
+}
+#daysUnit{bottom:29;
+ background-color: #89f;
+ border-color: #fff;
+ left: 230;
+ bottom:33;
+ font-size: 17px;
+}
+#daysTen{
+ background-color: #89f;
+ border-color: #fff;
+ left: 270;
+ bottom:29;
+ font-size: 17px;
+}
+.timingunitlabel{
+  width:100%;
+  height:50px;
+  font-size:30px;
+  color: #99f;
+  align-items:center;
+  text-align:center;
+  border-style:solid;
+  border-color:#68b;
+  background-image: linear-gradient(to right, #336, #98d);
+  position: fixed;
+  top:90%;
+}
+
+input[type=submit]{
+  cursor: pointer;
+}
+#fulltime{
+  width:85%;
+  position:relative;
+  bottom:3;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height:100%;
+  background-image: linear-gradient(to right, #359, #457);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  border-color: #ccf;
+  border-style: solid;
+  color:#aef;
+  text-shadow: 0px 0px 9px #9cf;
+}
+#fulltimeholder{
+  margin: auto;
+  position: relative;
+  bottom: 5;
+  left:5%;
+  width:25%;
+  height:100%;
+  background-color: #335;
+  border-style: solid;
+  border-color: #9cf;
+}
+#stopwatch1{
+  text-align:left;
+  position: relative;
+  left:25%;
+}

@@ -1,0 +1,61 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+button{
+  cursor: pointer;
+}
+.links{
+  height:50px;
+  width: inherit;
+  background-color: #7ad;
+  box-shadow: 5px 5px 13px #149;
+  border-radius: 20px;
+}
+Logout{
+  position: absolute;
+  left:600;
+}
+#options{
+  position:relative;
+  left: calc((100% - 16rem)/8);
+}
+.features{
+  width:16rem;
+  height:10rem;
+
+  background-color: #9cf;
+  border-color: #edf;
+  border-style:solid;
+
+}
+#scheduleandcalendaroption{
+  background-image: radial-gradient (#49a, #99f);
+  float:left;
+}
+#stopwatchoption{
+  background-image: radial-gradient (#99f, #49a);
+  float:left;
+}
+#timeroption{
+  background-image: radial-gradient (#49a, #99f);
+  float:left;
+}
+.featuresbutton{
+  height:60px;
+  width:inherit;
+  background-color: #5ac;
+  color: #aef;
+  font-size: 20px;
+  border-style:solid;
+}
+input[type=submit]{
+  cursor: pointer;
+}
+#cpanel{
+  background-image: linear-gradient(to right, #6ac, #8ad);
+}

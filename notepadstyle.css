@@ -1,0 +1,171 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+button{
+  cursor: pointer;
+}
+.scheduleselect{
+  cursor: pointer;
+}
+.scheduleheader{
+  font-size:20px;
+}
+.notescontainer{
+  margin: auto;
+  width:70%;
+  height:60%;
+  font-size: 30px;
+  background-image: linear-gradient(to right, #469, #57b);
+  border-radius: 30px;
+}
+#notestext{
+  margin:auto;
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  height: 90%;
+}
+.notesinput{
+  background-image: linear-gradient(to bottom, #eef, #bbc);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: medium;
+  border-color: #48b;
+  width:50%;
+  height: 10%;
+}
+#notestitle{
+  font-size: 30px;
+  color: #557;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.notesholderholder::-webkit-scrollbar {
+    display: block;
+    width: 50px;
+    background-image: linear-gradient(to right, #9bf, #9cf, #9bf);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #9ff;
+}
+.notesholderholder::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.notesholderholder::-webkit-scrollbar-thumb {
+    border-right: none;
+    border-left: none;
+    height: 100px;
+    background-image: radial-gradient(#aef, #79f, #09f);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #9cf;
+}
+
+.notesholderholder::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: inherit;
+}
+
+.notesholderholder::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 0;
+}
+
+.notesholderholder{
+  height: 450px;
+  width: 70%;
+  overflow-x: scroll;
+  background-image: linear-gradient(to bottom, #058, #09d);
+  border-style: solid;
+  border-color: #adf;
+  border-width: 30px;
+  position: fixed;
+  left:10%;
+  margin:auto;
+}
+
+.notesholder{
+  background-image: linear-gradient(to bottom, #09d, #9cf);
+  position: relative;
+  width:100%;
+  margin:auto;
+}
+#wholder{
+  margin: auto;
+  position: relative;
+}
+.notestext{
+  width:300px;
+  height:auto;
+}
+.notesdeleteholder{
+  width:400px;
+  height:100px;
+  position: absolute;
+}
+.notescontainment{
+  color: #fff;
+  text-shadow: 0px 2px 8px #a9c;
+}
+#notesviewerholder{
+  width:80%;
+  margin:auto;
+  position:relative;
+}
+#notesviewer{
+  margin:auto;
+  width: 100%;
+}
+.notestext{
+  width: 100%;
+}
+
+.notesviewerholder::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.notesviewerholder::-webkit-scrollbar-thumb {
+    border-right: none;
+    border-left: none;
+    height: 100px;
+    background-image: radial-gradient(#aef, #79f, #09f);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #9cf;
+}
+
+.notesviewerholder::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: inherit;
+}
+
+.notesviewerholder::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 0;
+}
+
+.notesviewerholder{
+  height: 60%;
+  width: 80%;
+  overflow-x: scroll;
+  background-image: linear-gradient(to bottom, #058, #446);
+  border-style: solid;
+  border-color: #adf;
+  border-width: 30px;
+  position: relative;
+  left:10%;
+  margin:auto;
+  float:left;
+}
+
+.notesviewer{
+  background-image: linear-gradient(to bottom, #226, #446);
+  position: relative;
+  width:98%;
+  margin:auto;
+}
+.notesinfo{
+  position: absolute;
+  top:80%;
+}
