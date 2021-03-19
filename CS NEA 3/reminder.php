@@ -98,7 +98,7 @@ $result = $stmt->get_result();
   <div id = "remindersindicateholder">
       <?php
       if ($result->num_rows == 0){
-      echo '<div class = "schedulesindicate">No reminders for today... yet!</div>';
+      echo '<div class = "schedulesindicate">No events for today... yet!</div>';
       }
       else{
         // Singular

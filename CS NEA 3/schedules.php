@@ -185,7 +185,7 @@ date_default_timezone_set('UTC');
           $parameterBind .= $_SESSION['parameterArray'][$i];
         }
 
-        // Bind to al parameters in the array
+        // Bind to all parameters in the array
         $stmt->bind_param('' . $parameterBind . '',  ...$_SESSION['variableArray']);
 
         // call_user_func_array(array($stmt, "bind_param"), array_merge(array($parameterBind), $variableArray));
@@ -306,51 +306,53 @@ date_default_timezone_set('UTC');
   ?>
 </div>
 </div>
-<div class = "calendarholderholder">
-  <form action = "calendarsfind.inc.php" method = "post">
-    <label><div class = "scheduleheader">Search for a specific year:</div></label>
-    <input type = "number" name = "calendaryearsearch" class = "scheduleselect" style = "cursor:text; width:100; float:left;"></input>
-    <input type = "submit" value = "Go" style = "float:left; position: relative; width: 70px; height:50px;font-size:25px;color:#fff;background-color:#5f5;border-style:solid;border-color:#7f7;font-family:'Montserrat'">
+<div class = "calendarholderholderholder">
+  <div class = "calendarholderholder">
+    <form action = "calendarsfind.inc.php" method = "post">
+      <label><div class = "scheduleheader">Search for a specific year:</div></label>
+      <input type = "number" name = "calendaryearsearch" class = "scheduleselect" style = "cursor:text; width:100; float:left;"></input>
+      <input type = "submit" value = "Go" style = "float:left; position: relative; width: 70px; height:50px;font-size:25px;color:#fff;background-color:#5f5;border-style:solid;border-color:#7f7;font-family:'Montserrat'">
+    </form>
+    <form action = "calendarsresetsearch.inc.php" method = "post">
+      <input type = "submit" value = "Reset" style = "float:left; position: relative; bottom:16;width: 70px; height:50px;font-size:18px;color:#fff;background-color:#f55;border-style:solid;border-color:#f77;font-family:'Montserrat'">
+    </input>
   </form>
-  <form action = "calendarsresetsearch.php" method = "post">
-    <input type = "submit" value = "Reset" style = "float:left; position: relative; bottom:16;width: 70px; height:50px;font-size:18px;color:#fff;background-color:#f55;border-style:solid;border-color:#f77;font-family:'Montserrat'">
-  </input>
-</form>
-<div class = "calendarholder">
-<?php
-// Importing the Calendar class
-require_once ('calendarClass.php');
+  <div class = "calendarholder">
+  <?php
+  // Importing the Calendar class
+  require_once ('calendarClass.php');
 
-// Generating the calendars, from calendarclass.php
-if (isset($_SESSION['calendarYear'])){
-  $globalYear = $_SESSION['calendarYear'];
-  $month = 1;
-  $globalMonth = $month;
-}
-// Else generate the current year calendar
-else{
-  $month = date('m');
-  $year = date('Y');
-  $globalMonth = $month;
-  $globalYear = $year;
-}
+  // Generating the calendars, from calendarclass.php
+  if (isset($_SESSION['calendarYear'])){
+    $globalYear = $_SESSION['calendarYear'];
+    $month = 1;
+    $globalMonth = $month;
+  }
+  // Else generate the current year calendar
+  else{
+    $month = date('m');
+    $year = date('Y');
+    $globalMonth = $month;
+    $globalYear = $year;
+  }
 
-// Iteration for generating all calendars in a year
-for ($globalMonth == 1; $globalMonth <= 12; $globalMonth++){
-  $CalendarPad = new CalendarMonth ($globalMonth, $globalYear);
-  $CalendarPad->show();
-  if ($globalMonth == 12){
-    // Generate the calendar for the next year as well
-    $globalMonth2 = 1;
-    for ($globalMonth2 == 1; $globalMonth2 <= 12; $globalMonth2++){
-      $CalendarPad2 = new CalendarMonth ($globalMonth2, $globalYear + 1);
-      $CalendarPad2->show();
+  // Iteration for generating all calendars in a year
+  for ($globalMonth == 1; $globalMonth <= 12; $globalMonth++){
+    $CalendarPad = new CalendarMonth ($globalMonth, $globalYear);
+    $CalendarPad->show();
+    if ($globalMonth == 12){
+      // Generate the calendar for the next year as well
+      $globalMonth2 = 1;
+      for ($globalMonth2 == 1; $globalMonth2 <= 12; $globalMonth2++){
+        $CalendarPad2 = new CalendarMonth ($globalMonth2, $globalYear + 1);
+        $CalendarPad2->show();
+      }
     }
   }
-}
-?>
-</div>
-</div>
+  ?>
+  </div>
+  </div>
+  </div>
 </div>
 </body>
 </html>

@@ -5,9 +5,12 @@
 
 session_start();
 require_once('config.php');
-
-
+// Reset showing previous events
 $_SESSION['showPreviousEvents'] = false;
+// Reset that checkbox
+$_SESSION['selectValue'] = '';
+// Reset the searched query
 $_SESSION['schedulesRefinedQuery'] = '';
+// Redirect
 header('location: schedules.php');
 exit;

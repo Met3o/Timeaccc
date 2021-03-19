@@ -1,4 +1,3 @@
-
 <?php
 // Page for executing the request of the user deleting their schedule event
 // Not visible to the user

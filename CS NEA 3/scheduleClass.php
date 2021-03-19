@@ -76,6 +76,7 @@ class ScheduleEvent{
     if ($this->schedulesUrgency == 0){
       $this->schedulesUrgency = 1;
     }
+
     // Colours to indicate urgency
 
     // 3 = Red (Urgent)
@@ -91,11 +92,13 @@ class ScheduleEvent{
       $output .= 'style = "background-image:linear-gradient(to right, #0f9, #0ff); ';
     }
 
+    // Ensure that titles do not overflow if they are long, by shrinking the font size
     $titleLength = strlen($this->schedulesTitle);
     // If length longer than 16 then shrink font size to fit
     if ($titleLength > 16 && $titleLength < 24){
       $output .= 'font-size: 20px;';
     }
+    // If length even longer but still shorter than 31
     if ($titleLength >= 23 && $titleLength < 31){
       $output .= 'font-size: 16px;';
     }

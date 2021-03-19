@@ -18,10 +18,11 @@ function play_alarm(){
   }
 }
 
-// Stop looping the annoying alarm noise
+// Stop looping the alarm noise
 function clear_alarm_noise(){
   timerStopNow.loop = false;
   timerStopNow.pause();
+  timerStopNow.currentTime = 0;
   timeHasBeenSet = false;
 }
 

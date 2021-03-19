@@ -14,13 +14,14 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
 
 ?>
 <head>
-  <title>Welcome to Timeacc!</title>
+  <title>Welcome to Timeacc, <?php echo strip_tags($_SESSION['userName']); ?>!</title>
   <meta charset="UTF-8">
   <meta name="description" content="Timeacc - Free scheduling and more">
   <meta name="keywords" content="time, timmeacc, scheduling, reminders">
   <meta name="author" content="Imole Adebayo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel ="icon" href = "https://previews.123rf.com/images/mcklog/mcklog1105/mcklog110500002/9616471-a-render-of-a-vintage-alarm-clock.jpg">
+  <link rel = "stylesheet" href = "calendarstyle.css">
 </head>
 <body id = "cpanel">
   <?php

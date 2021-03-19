@@ -76,9 +76,10 @@ $namesresult = $stmt->get_result();
         <select class = "scheduleselect" name = "schedulestitle2" type = "text" id = "schedulestitle">
           <option value = "">None selected</option>
           <?php
-          // Avoid repeating of names as options
+          // Append values into the names array for showing
           $namesArray = [];
           while ($row = $namesresult->fetch_assoc()){
+            // Avoid repeating of names as options
             $name = $row['schedulesName'];
             $namesArray[] = $name;
             // If not already an option
@@ -117,7 +118,7 @@ $namesresult = $stmt->get_result();
         <label>Select time of day:</label>
         <select class = "scheduleselect" name = "scheduleshour" id = "scheduleshour">
           <option value = <?php echo date('H');?>> <?php echo date('H');?></option>
-          <option value = 0>12am</option>
+          <option value = 0>0am</option>
           <option value = 1>1am</option>
           <option value = 2>2am</option>
           <option value = 3>3am</option>

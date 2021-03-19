@@ -94,9 +94,11 @@ if ($con){
     if (isset($_POST['submit'])) {
       // Assign the values submitted through the form into variables
       $schedulesuserid = $_SESSION['id'];
-      if (!isset($_POST['schedulestitle']) && strlen ($_POST['schedulestitle2']) > 0){
+      // If schedules options selected without title typed in manually
+      if (strlen($_POST['schedulestitle']) < 1 && strlen ($_POST['schedulestitle2']) > 0){
         $schedulestitle = $_POST['schedulestitle2'];
       }
+      // Else refer to the title the user typed in manually
       else{
         $schedulestitle = $_POST['schedulestitle'];
       }

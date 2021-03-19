@@ -111,7 +111,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
         <label>Select hour of day:</label>
         <select class = "scheduleselect" name = "scheduleshour" id = "scheduleshour">
           <option value = <?php echo $schedulesGetHour?> ><?php echo $schedulesGetHour . $timeCulture . '  ';?></option>
-          <option value = 0>12am</option>
+          <option value = 0>0am</option>
           <option value = 1>1am</option>
           <option value = 2>2am</option>
           <option value = 3>3am</option>
